@@ -8,3 +8,12 @@ CREATE TABLE [IF NOT EXISTS] table_name (
    table_constraints
 );
 ```
+## 建立一個student的資料表
+
+```sql
+CREATE TABLE IF NOT EXISTS student(
+   student_id SERIAL PRIMARY KEY,
+   name varchar(20) NOT NULL,
+   major varchar(20) UNIQUE
+);
+```
