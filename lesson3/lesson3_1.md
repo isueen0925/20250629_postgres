@@ -52,7 +52,7 @@ ORDER BY
   sort_expression;
 ```
 
-```sql
+``` sql
 SELECT student_id, name, major
 FROM  student;
 
