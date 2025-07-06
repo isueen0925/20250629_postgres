@@ -31,6 +31,7 @@ DROP TABLE IF EXISTS student;
 INSERT INTO student (name, major)
 VALUES ('吳育君','歷史');
 ```
+
 ## 新增多筆資料
 
 ```sql
