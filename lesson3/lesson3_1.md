@@ -17,3 +17,8 @@ CREATE TABLE IF NOT EXISTS student(
    major varchar(20) UNIQUE
 );
 ```
+##刪除資料表
+
+```sql
+DROP TABLE IF EXISTS student;
+```
