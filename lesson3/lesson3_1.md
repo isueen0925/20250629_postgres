@@ -8,6 +8,7 @@ CREATE TABLE [IF NOT EXISTS] table_name (
    table_constraints
 );
 ```
+
 ## 建立一個student的資料表
 
 ```sql
@@ -17,8 +18,22 @@ CREATE TABLE IF NOT EXISTS student(
    major varchar(20) UNIQUE
 );
 ```
-##刪除資料表
+
+## 刪除資料表
 
 ```sql
 DROP TABLE IF EXISTS student;
+```
+
+## 新增1筆資料
+
+```sql
+INSERT INTO student (name, major)
+VALUES ('吳育君','歷史');
+```
+## 新增多筆資料
+
+```sql
+INSERT INTO student (name, major)
+VALUES ('小柱','生物'),('信忠','英語');
 ```
