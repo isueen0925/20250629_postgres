@@ -23,7 +23,6 @@ def create_connection():
     )
     return conn
 
-
 def main():
     conn = create_connection()
     if conn:
@@ -33,7 +32,7 @@ def main():
         FROM "台鐵車站資訊";
         """
         result = execute_query(conn, query)
-        print("台鐵車站資訊：", result)
+        print("台鐵車站資訊：", result[0][0])
         conn.close()
     else:
         print("無法連接到資料庫，請檢查設定。")
